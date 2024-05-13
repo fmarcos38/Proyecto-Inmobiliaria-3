@@ -1,11 +1,16 @@
-.contListaP {
+.contGralListaP {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-top: 80px;
+}
+.contListaP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
 }
 .no-props{
     display: flex;

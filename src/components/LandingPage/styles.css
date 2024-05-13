@@ -3,61 +3,120 @@
     justify-content: center;
     align-items: start;
     width: 100%;
-    height: 550px;
-    margin: 0 0 70px 0;
+    height: 620px;
+    margin: 0 0 40px 0;
+    background-color: rgba(54, 53, 53, 0.744);
+}
+.cont-land{
+    width: 80%;
+    height: 620px;
     background-image: url('https://em4ftgkgsyf.exactdn.com/wp-content/uploads/2022/06/1.jpeg?strip=all&lossy=1&ssl=1');
     background-size: cover; /* Hace que la imagen de fondo cubra todo el div */
     background-position: center;
 }
-.cont-land{
-    width: 80%;
-    height: 550px;
-}
-.cont-texto{
-    width: 40%;
+.container {
+    width: 100%;
     display: flex;
     justify-content: start;
     align-items: start;
-    margin: 50px 0 0 0;
-    background-color: aquamarine;
 }
+.sub-container{
+    width: 40%;
+    margin-top: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-left: 20px;
+}
+.text {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.4;
+}
+/* estilos categorias */
 .cont-categorias{
     display: flex;
     position: absolute;
     justify-content: space-around;
     align-items: center;
     width: 80%;
-    height: 250px;
-    top: 550px;
+    height: 200px;
+    top: 630px;
 }
-.cont-categorias .cont-div-categoria:nth-child(odd){ /* hijo impares de cont-categorias*/
-    color: rgb(11, 11, 11);
-    background-color: #fff;
-}
-.cont-categorias .cont-div-categoria:nth-child(even){ /* hijo pares de cont-categorias*/
-    color: #fff;
-    background-color: red;
-}
-.cont-div-categoria{
-    width: 20%;
-    height: 220px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.cont-info-cat{
+.cont-categ-filtros{
     width: 80%;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.tipos-props{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-div-categoria{    
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-cat{
+    width: 100px;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+.p-tipo-prop-filtro{
+    margin: 0;
 }
 .icono-cat{
-    width: 80px;
-    height: 80px;
-    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 45px;
+    background-color: red;
 }
 .cont-info-cat p {
     margin: 0;
 }
+/* estilos checkbox */
+.cont-opc-VA{
+    height: 50px;
+}
+.label-venta, .label-alquiler {
+    font-size: 30px;
+    font-family: 'Lato';
+    font-weight: 600;
+}
+.label-alquiler{
+    margin-left: 20px;
+}
+.input-venta, .input-alquiler{
+    transform: scale(1.5); /* agranda el tamaño del checkbox */
+    margin-left: 10px;
+}
+
+/* reponsive */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* hijo impares de cont-categorias*/
+/* .cont-categorias  .cont-div-categoria:nth-child(odd){ 
+    color: rgb(11, 11, 11);
+    background-color: #fff;
+} */
+/* hijo pares de cont-categorias*/
+/* .cont-categorias  .cont-div-categoria:nth-child(even){
+    color: #fff;
+    background-color: red;
+} */

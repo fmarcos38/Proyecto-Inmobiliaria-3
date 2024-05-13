@@ -5,7 +5,7 @@ import './styles.css';
 function ListaPropiedades({allProps}) {
 
     return (
-        <div className='contListaP'>
+        <div className='contGralListaP'>
             <div className='contListaP'>
                 {
                     allProps[0] ?

@@ -6,6 +6,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import SearchBar from '../SearchBar';
 
 
 function NavbarConRedes() {
@@ -78,27 +79,29 @@ function NavbarConRedes() {
                     </div>
 
                     <div className='colInf-3'>
+                        {/* searchBar para P.Grande */}
+                        <SearchBar/>
                         {/* menu hambur P.Chica */}
-                    <div 
-                        className={`menu-icon ${isOpen ? 'open' : ''}`} 
-                        onClick={toggleMenu}
-                    >
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    {/* menu desplegable */}
-                    <div className="menu">
-                        {
-                            isOpen && (
-                                <ul>
-                                    <li>Hola</li>
-                                    <li>Pepe</li>
-                                    <li>Salis?</li>
-                                </ul>
-                            )
-                        }
-                    </div>
+                        <div
+                            className={`menu-icon ${isOpen ? 'open' : ''}`}
+                            onClick={toggleMenu}
+                        >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        {/* menu desplegable */}
+                        <div className="menu">
+                            {
+                                isOpen && (
+                                    <ul>
+                                        <li>Hola</li>
+                                        <li>Pepe</li>
+                                        <li>Salis?</li>
+                                    </ul>
+                                )
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

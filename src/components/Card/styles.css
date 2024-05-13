@@ -6,7 +6,7 @@
 .contCard {
     position: relative; /* es para Al paea el mouse funcione la opcacidad y msj detalle */
     display: grid;
-    grid-template-columns: 350px;
+    grid-template-columns: 370px;
     grid-template-rows: 50px 250px 90px 80px;
     grid-template-areas: "title" "image" "info1" "info2";
     background: white;
