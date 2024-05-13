@@ -1,0 +1,36 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60px;
+    background-color: #333;
+    transition: width 0.3s ease;
+    overflow-x: hidden;
+  }
+  
+  .sidebar.open {
+    width: 200px;
+  }
+  
+  .sidebar.closed {
+    width: 60px;
+  }
+  
+  .toggle-button {
+    margin-top: 50px;
+    background-color: #f1ecec;
+    color: #161515;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+  }
+  
+  .content {
+    padding-top: 60px; /* Ajuste para dejar espacio cuando la barra está abierta */
+  }
+  
+  /* Ajustar estilos para iconos si se está utilizando FontAwesome u otro método similar */
+  

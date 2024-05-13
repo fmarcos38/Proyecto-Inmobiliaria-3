@@ -46,7 +46,7 @@ function NavbarConRedes() {
                 <div className='cont-nav-inf'>
                     <div className='colInf-1'>
                         {/* logo */}                        
-                        <NavLink to='/home' >
+                        <NavLink to='/' >
                             {/* <img src={logo} alt='img not found' className='logo' /> */}
                             <p className='logo'>Inmobiliaria <b>Mendive</b></p>
                         </NavLink>
