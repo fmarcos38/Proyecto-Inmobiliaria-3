@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import './styles.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
-import SearchBar from '../SearchBar';
 
 
 function NavbarConRedes() {
@@ -56,31 +55,29 @@ function NavbarConRedes() {
                         {/* menu SOLO Pantalla Grande*/}
                         <ul className='ul-menu-izq'>
                             <li>
-                                <NavLink to='#' >
+                                <NavLink to='/venta' >
                                     Venta
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to='#' >
+                                <NavLink to='/alquiler' >
                                     Alquileres
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to='#' >
-                                    Oportunidades
+                                <NavLink to='/destacadas'>
+                                    Destacadas
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to='#' >
+                                <NavLink to='/contacto' >
                                     Contacto
                                 </NavLink>
                             </li>
                         </ul>
                     </div>
 
-                    <div className='colInf-3'>
-                        {/* searchBar para P.Grande */}
-                        <SearchBar/>
+                    <div className='colInf-3'>                        
                         {/* menu hambur P.Chica */}
                         <div
                             className={`menu-icon ${isOpen ? 'open' : ''}`}
@@ -95,9 +92,26 @@ function NavbarConRedes() {
                             {
                                 isOpen && (
                                     <ul>
-                                        <li>Hola</li>
-                                        <li>Pepe</li>
-                                        <li>Salis?</li>
+                                        <li>
+                                            <Link to='/venta'>
+                                                Venta
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to='/alquiler'>
+                                                Alquiler
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to='/destacadas'>
+                                                Destacadas
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to='/contacto'>
+                                                Contacto
+                                            </Link>
+                                        </li>
                                     </ul>
                                 )
                             }

@@ -5,6 +5,7 @@ import './styles.css';
 import iconoProps from '../../Imagenes/logoCasaDepto.jpg';
 import { Link } from 'react-router-dom';
 
+
 function LandingPage() {
 
     //estado para check venta
@@ -114,7 +115,7 @@ function LandingPage() {
                             <input className='input-alquiler' type='checkbox' id='venta' value={checkedAlquiler} onChange={(e) =>actualizaCheckAlq(e)}/>
                         </div>
                     </div>
-                </div>            
+                </div>
             </div>
         </div>
     )
