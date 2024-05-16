@@ -4,6 +4,7 @@ import './styles.css';
 
 import iconoProps from '../../Imagenes/logoCasaDepto.jpg';
 import { Link } from 'react-router-dom';
+import ArrowDown from '../Flecha-animada';
 
 
 function LandingPage() {
@@ -115,6 +116,11 @@ function LandingPage() {
                             <input className='input-alquiler' type='checkbox' id='venta' value={checkedAlquiler} onChange={(e) =>actualizaCheckAlq(e)}/>
                         </div>
                     </div>
+                </div>
+
+                {/* flecha animada */}
+                <div className='cont-flecha'>
+                    <ArrowDown/>
                 </div>
             </div>
         </div>
