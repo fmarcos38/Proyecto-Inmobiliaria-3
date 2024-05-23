@@ -73,46 +73,35 @@ function NavbarConRedes() {
                         </a>
                     </div>
                 </div>
-                {/* menú P.CH y desplegable */}
-                <div className='cont-navbar-menuPCH'>
-                    {/* menu hambur P.Chica */}
-                    <div
-                        className={`menu-icon ${isOpen ? 'open' : ''}`}
-                        onClick={toggleMenu}
-                    >
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    {/* menu desplegable */}
-                    <div className="menu">
-                        {
-                            isOpen && (
-                                <ul>
-                                    <li>
-                                        <Link to='/venta'>
-                                            Venta
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to='/alquiler'>
-                                            Alquiler
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to='/destacadas'>
-                                            Destacadas
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to='/contacto'>
-                                            Contacto
-                                        </Link>
-                                    </li>
-                                </ul>
-                            )
-                        }
-                    </div>
+                {/* menu hambur P.Chica */}
+                <div
+                    className={`menu-icon ${isOpen ? 'open' : ''}`}
+                    onClick={toggleMenu}
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                {/* menu desplegable P.chica*/}
+                <div className="menu-desplegable">
+                    {
+                        isOpen && (
+                            <ul className='na-lista-pChica'>
+                                <li className='items-pChica'>
+                                    <Link to='/' className='link-navbar'>Home</Link>
+                                </li>
+                                <li className='items-pChica'>
+                                    <Link to='/venta' className='link-navbar'>Venta</Link>
+                                </li>
+                                <li className='items-pChica'>
+                                    <Link to='/alquiler' className='link-navbar'>Alquiler</Link>
+                                </li>
+                                <li className='items-pChica'>
+                                    <Link to='/nosotros' className='link-navbar'>Nosotros</Link>
+                                </li>
+                            </ul>
+                        )
+                    }
                 </div>
             </div>
         </nav>
