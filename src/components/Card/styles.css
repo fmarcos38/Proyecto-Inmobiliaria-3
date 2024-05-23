@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(243, 247, 244);
+    color: var(--primary-color);
     background-color: rgb(19, 19, 19);;
     
 }

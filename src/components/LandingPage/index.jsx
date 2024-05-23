@@ -26,9 +26,9 @@ function LandingPage() {
         <div className='contGralLanding'>            
             <div className='cont-land'>
                 {/* texto superior */}
-                <div className="container">
-                    <div className="sub-container">
-                        <p className="text">
+                <div className="container-texto">
+                    <div className="sub-container-texto">
+                        <p className="texto">
                             <b>
                                 Somos una empresa con presencia en el Mercado Inmobiliario de Mar del Plata desde 1972.
                                 En estos años hemos asesorado a empresas de primer nivel Nacional e Internacional,
@@ -43,63 +43,63 @@ function LandingPage() {
                     <div className='cont-categ-filtros'>
                         {/* tipos props */}
                         <div className='tipos-props'>
-                            <div className='cont-div-categoria'>
+                            <div className='cont-div-categoria cat-1'>
                                 <button className='btn-cat' id='depto' onClick={(e) => handleClick(e)}>
                                     <img src={iconoProps} alt='' className='icono-cat' />                                                                            
                                 </button>
                                 <p className='p-tipo-prop-filtro'><b>Deptos</b></p>
                             </div>
 
-                            <div className='cont-div-categoria'>
+                            <div className='cont-div-categoria cat-2'>
                                 <button className='btn-cat' id='depto' onClick={(e) => handleClick(e)}>
                                     <img src={iconoProps} alt='' className='icono-cat' />                                                                            
                                 </button>
                                 <p className='p-tipo-prop-filtro'><b>Casas</b></p>
                             </div>
 
-                            <div className='cont-div-categoria'>
+                            <div className='cont-div-categoria cat-3' >
                                 <button className='btn-cat' id='depto' onClick={(e) => handleClick(e)}>
                                     <img src={iconoProps} alt='' className='icono-cat' />                                                                            
                                 </button>
                                 <p className='p-tipo-prop-filtro'><b>PH</b></p>
                             </div>
 
-                            <div className='cont-div-categoria'>
+                            <div className='cont-div-categoria cat-4' >
                                 <button className='btn-cat' id='depto' onClick={(e) => handleClick(e)}>
                                     <img src={iconoProps} alt='' className='icono-cat' />                                                                            
                                 </button>
                                 <p className='p-tipo-prop-filtro'><b>Locales</b></p>
                             </div>
 
-                            <div className='cont-div-categoria'>
+                            <div className='cont-div-categoria cat-5' >
                                 <button className='btn-cat' id='depto' onClick={(e) => handleClick(e)}>
                                     <img src={iconoProps} alt='' className='icono-cat' />                                                                            
                                 </button>
                                 <p className='p-tipo-prop-filtro'><b>Terrenos</b></p>
                             </div>
 
-                            <div className='cont-div-categoria'>
+                            <div className='cont-div-categoria cat-6' >
                                 <button className='btn-cat' id='depto' onClick={(e) => handleClick(e)}>
                                     <img src={iconoProps} alt='' className='icono-cat' />                                                                            
                                 </button>
                                 <p className='p-tipo-prop-filtro'><b>Oficinas</b></p>
                             </div>
                             
-                            <div className='cont-div-categoria'>
+                            <div className='cont-div-categoria cat-7'>
                                 <button className='btn-cat' id='depto' onClick={(e) => handleClick(e)}>
                                     <img src={iconoProps} alt='' className='icono-cat' />                                                                            
                                 </button>
                                 <p className='p-tipo-prop-filtro'><b>Desarrollos</b></p>
                             </div>
 
-                            <div className='cont-div-categoria'>
+                            <div className='cont-div-categoria cat-8'>
                                 <button className='btn-cat' id='depto' onClick={(e) => handleClick(e)}>
                                     <img src={iconoProps} alt='' className='icono-cat' />                                                                            
                                 </button>
                                 <p className='p-tipo-prop-filtro'><b>Cocheras</b></p>
                             </div>
 
-                            <div className='cont-div-categoria'>
+                            <div className='cont-div-categoria cat-9'>
                                 <button className='btn-cat' id='depto' onClick={(e) => handleClick(e)}>
                                     <img src={iconoProps} alt='' className='icono-cat' />                                                                            
                                 </button>

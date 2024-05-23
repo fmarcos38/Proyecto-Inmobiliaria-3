@@ -3,115 +3,73 @@ nav {
     top: 0;
     left: 0; */
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 5rem;
-    background-color: #fff;
+    height: 70px;
+    background-color: rgb(45, 43, 43);
     /* z-index: 1; */
 }
-/* cont nav Sup */
-.navSup{
-    width: 100%;
-    height: 2rem;
+.cont-navbar{
+    width: 90%;
     display: flex;
-    justify-content: center;    
+    justify-content: space-between;
     align-items: center;
-    background-color: red;
 }
-.redes{
-    width: 80%;
-    height: 2.5rem;
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-    color: #fff;
+/* est. logo */
+.cont-navbar-logo{
+/* background-color: aqua; */
 }
-.col1 {
-    width: 60%;
-    height: 100%;
-    display: flex;
-    justify-content: start;    
-    align-items: center; /* Color de fondo para visualización */
+.logo-navbar{
+    position: relative;
+    top: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 1;
 }
-.navSup .redes .col1 p {
-    font-size: small;
+/* estilos menu PG */
+.cont-navbar-menuG{
+    width: 50%;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* background-color: blue; */
 }
-.navSup .redes .col1 .iconoContact {
-    font-size: large;
-}
-.col2 {
-    display: flex;
-    justify-content: end;    
-    align-items: center;
-    flex-grow: 1; /* La segunda columna ocupará el espacio restante */
-    height: 100%; /* Color de fondo para visualización */
-}
-.navSup .redes .col2 .iconosRedes{
-    font-size:larger;
-    color: black;
-    background-color: #fff;
-}
-
-/* cont nav inferior menu */
-.navInf{
-    width: 100%;
-    height: 3rem;
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-    background-color: #fff;
-}
-.cont-nav-inf{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 3.5rem;
-}
-/* col 1 */
-.colInf-1{
-    display: flex;
-    justify-content: start;    
-    align-items: center;
-    height: 3.5rem;
-}
-.logo{
-    font-size: medium;
-    margin-left: 3px;
-}
-/* col2 */
-.colInf-2{
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-    height: 3.5rem;
-}
-.ul-menu-izq{
+.ul-menuPG{
     display: flex;
     justify-content: center;
     align-items: center;
+    list-style: none; /* quita punto de la etiqta <li> */
 }
-li {
-    list-style: none;
-    margin-right: 1.5rem;
-    color: black;
-}
-/* quito line y cambio color etiqtas a y Link */
-a, Link{
-    color: black;
+.link-navbar{
+    color: rgb(200, 200, 93);
     text-decoration: none;
+    font-size: 20px;
+    margin-left: 20px;
 }
-/* col 3 */
-.colInf-3{
+/* est. redes */
+.cont-navbar-redes{
+    width: 40%;
     display: flex;
-    justify-content: end;    
+    justify-content: end;
     align-items: center;
-    height: 3.5rem;
+    /* background-color: red; */
 }
-
+.cont-items-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.iconoContact{
+    color: rgb(106, 106, 53);
+}
+.cont-items-redes p {
+    color: rgb(200, 200, 93);
+}
+.cont-navbar-menuPCH{
+    display: none;
+}
 /* menu hambur pantalla chica*/
 .menu-icon span {
     width: 100%;
@@ -204,7 +162,8 @@ a, Link{
 }
 
 @media screen and (max-width: 750px) {
-    .colInf-2{
+    .cont-navbar-menuG,
+    .cont-navbar-redes{
         display: none;
     }
     .menu-icon span {

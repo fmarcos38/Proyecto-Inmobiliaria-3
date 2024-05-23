@@ -8,17 +8,15 @@ import MapProp from '../../components/MapaProp';
 
 function DetalleProp(){
 
-    const detalle_prop = useSelector(state => state.detalleProp);//propiedades[0];
+    const detalle_prop = useSelector(state => state.detalleProp);
     const dispatch = useDispatch();
     const { id } = useParams();  //let id = props.match.params.id 
-
 
     useEffect(() => {
         dispatch(detalleProp(id));
 
         return () => { dispatch(resetDetalle()); }
-    }, [dispatch, id]);
-    
+    }, [dispatch, id]);    
     
     return(
         <div className='contGralDetalle'>
@@ -41,7 +39,8 @@ function DetalleProp(){
                                 <p>No img</p>
                         }
                     </div>
-
+                    
+                    {/* detalles prop -> textos */}
                     <div className='info-textos'>
                         <span>DETALLES DE LA PROPIEDAD</span>
 

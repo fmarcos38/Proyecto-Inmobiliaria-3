@@ -6,7 +6,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
-
+import Logo from '../../Imagenes/Logo-Flor-2.jpg';
 
 function NavbarConRedes() {
 
@@ -18,104 +18,100 @@ function NavbarConRedes() {
 
     return (
         <nav>
-            {/* nav superiro */}
-            <div className='navSup'>
-                <div className='redes'>
-                    <div className='col1'>
-                        <LocationOnIcon className='iconoContact'/>
+            <div className='cont-navbar'>
+                {/* Logo */}
+                <div className='cont-navbar-logo'>
+                    <NavLink to='/' >
+                        <img src={Logo} alt='img not found' className='logo-navbar' />
+                    </NavLink>
+                </div>
+                {/* menu P.Grande */}
+                <div className='cont-navbar-menuG'>
+                    <ul className='ul-menuPG'>
+                        <li>
+                            <NavLink to='/venta' className={'link-navbar'}>
+                                Venta
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/alquiler' className={'link-navbar'}>
+                                Alquileres
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/destacadas' className={'link-navbar'}>
+                                Destacadas
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/contacto' className={'link-navbar'}>
+                                Contacto
+                            </NavLink>
+                        </li>
+                    </ul>
+                </div>
+                {/* Redes */}
+                <div className='cont-navbar-redes'>
+                    <div className='cont-items-redes'>
+                        <LocationOnIcon className='iconoContact' />
                         <p>Sarmiento 2323</p>
-                        <LocalPhoneIcon className='iconoContact'/>
+                    </div>
+                    <div className='cont-items-redes'>
+                    <LocalPhoneIcon className='iconoContact'/>
                         <p>2234422665</p>
-                        <AlternateEmailIcon className='iconoContact'/>
+                    </div>
+                    <div className='cont-items-redes'>
+                        <AlternateEmailIcon className='iconoContact' />
                         <p>florm@gmail.com</p>
                     </div>
-
-                    <div className='col2'>
+                    <div className='cont-items-redes'>
                         <a href='https://www.instagram.com/florm.bienesraices/'>
-                            <InstagramIcon className='iconosRedes' />
+                            <InstagramIcon className='iconoContact' />
                         </a>
                         <a href='http://api.whatsapp.com/send?phone=2234422665'>
-                            <WhatsAppIcon className='iconosRedes' />
+                            <WhatsAppIcon className='iconoContact' />
                         </a>
                     </div>
                 </div>
-            </div>
-            {/* nav inf */}
-            <div className='navInf'>
-                <div className='cont-nav-inf'>
-                    <div className='colInf-1'>
-                        {/* logo */}                        
-                        <NavLink to='/' >
-                            {/* <img src={logo} alt='img not found' className='logo' /> */}
-                            <p className='logo'>Inmobiliaria <b>Mendive</b></p>
-                        </NavLink>
+                {/* menú P.CH y desplegable */}
+                <div className='cont-navbar-menuPCH'>
+                    {/* menu hambur P.Chica */}
+                    <div
+                        className={`menu-icon ${isOpen ? 'open' : ''}`}
+                        onClick={toggleMenu}
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-
-                    <div className='colInf-2'>
-                        {/* menu SOLO Pantalla Grande*/}
-                        <ul className='ul-menu-izq'>
-                            <li>
-                                <NavLink to='/venta' >
-                                    Venta
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink to='/alquiler' >
-                                    Alquileres
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink to='/destacadas'>
-                                    Destacadas
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink to='/contacto' >
-                                    Contacto
-                                </NavLink>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div className='colInf-3'>                        
-                        {/* menu hambur P.Chica */}
-                        <div
-                            className={`menu-icon ${isOpen ? 'open' : ''}`}
-                            onClick={toggleMenu}
-                        >
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        {/* menu desplegable */}
-                        <div className="menu">
-                            {
-                                isOpen && (
-                                    <ul>
-                                        <li>
-                                            <Link to='/venta'>
-                                                Venta
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/alquiler'>
-                                                Alquiler
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/destacadas'>
-                                                Destacadas
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/contacto'>
-                                                Contacto
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                )
-                            }
-                        </div>
+                    {/* menu desplegable */}
+                    <div className="menu">
+                        {
+                            isOpen && (
+                                <ul>
+                                    <li>
+                                        <Link to='/venta'>
+                                            Venta
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/alquiler'>
+                                            Alquiler
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/destacadas'>
+                                            Destacadas
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/contacto'>
+                                            Contacto
+                                        </Link>
+                                    </li>
+                                </ul>
+                            )
+                        }
                     </div>
                 </div>
             </div>
