@@ -16,10 +16,6 @@
     align-items: center;
     height: 300px;
 }
-/* filtros P.CH */
-.cont-filtrosPCH{
-    display: none;
-}
 
 
 /* responsive */
@@ -49,13 +45,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 100%;
         height: auto;
-    }
-    /* filtros P.CH */
-    .cont-filtrosPCH {
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }

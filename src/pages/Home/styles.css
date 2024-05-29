@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #0c0c0c;
 }
 .cont-filtros-home{
   position: relative;
@@ -19,6 +20,9 @@
 }
 .cont-listaP-home{
   width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .toggle-button {
     width: 250px;
@@ -28,4 +32,24 @@
     cursor: pointer;
     padding: 15px 0;
     font-size: 20px;
+}
+/* filtros P.CH */
+.cont-filtrosPCH {
+  display: none;
+}
+
+@media screen and (max-width: 700px){
+  .cont-filtros-home{
+    display: none;
   }
+  .cont-listaP-home{
+    width: 95%;
+    background-color: #b31414;
+  }
+   /* filtros P.CH */
+  .cont-filtrosPCH {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

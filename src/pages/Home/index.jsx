@@ -8,6 +8,7 @@ import CotizacionDolar from '../../components/CotizacionDolar';
 import { getProps } from '../../Redux/Actions';
 import WhatsAppButton from '../../components/BotonWhastApp';
 import Filtros from '../../components/Filtros';
+import FiltrosPantallaChica from '../../components/Filtros-Pantalla-Chica';
 
 function Home() {
 
@@ -30,8 +31,13 @@ function Home() {
                         <div className='cont-home'>
                             {/* landing */}
                             <LandingPage />
+                            {/* Filtros P.Grande */}
                             <div className='cont-filtros-home'>
                                 <Filtros mostrarVentaAlq={true}/>
+                            </div>
+                            {/* filtros P.Chica */}
+                            <div className='cont-filtrosPCH'>
+                                <FiltrosPantallaChica/>
                             </div>
                             {/* lista props */}
                             <div className='cont-listaP-home'>
