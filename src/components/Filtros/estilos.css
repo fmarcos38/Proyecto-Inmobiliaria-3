@@ -1,74 +1,10 @@
-.contGralLanding{ /* el padre de este cont es el de HOME */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.cont-principal-filtros{    
     width: 100%;
-    height: 630px;
-    background-color: rgb(120, 119, 119);
-}    
-.cont-land{
+    height: auto;
+}
+.cont-filtros{
     width: 100%;
-    height: 630px;
-    background-image: url('https://em4ftgkgsyf.exactdn.com/wp-content/uploads/2022/06/1.jpeg?strip=all&lossy=1&ssl=1');
-    background-size: cover; 
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-}
-.container-texto {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-.sub-container-texto{
-    width: 60%;
-    margin-top: 20px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    margin-left: 20px;
-    background-color: rgba(79, 78, 78, 0.714);
-}
-.texto {
-    color: var(--primary-color);
-    text-align: center;
-    font-size: 20px;
-    line-height: 1.4;
-}
-/* animación texto */
-.sub-container-texto{
-    opacity: 0; /* Inicialmente, ocultamos los textos */
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-name: slideFromLeft;
-}
-@keyframes slideFromLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-/* fin animación texto */
-
-/* estilos categorias */
-.cont-categorias{
-    display: flex;
-    position: absolute;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    height: 200px;
-    top: 630px;
-}
-.cont-categ-filtros{
-    width: 100%;
-    height: 180px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,15 +227,3 @@
         top: 90%;
     }
 }
-
-
-/* hijo impares de cont-categorias*/
-/* .cont-categorias  .cont-div-categoria:nth-child(odd){ 
-    color: rgb(11, 11, 11);
-    background-color: #fff;
-} */
-/* hijo pares de cont-categorias*/
-/* .cont-categorias  .cont-div-categoria:nth-child(even){
-    color: #fff;
-    background-color: red;
-} */

@@ -1,8 +1,7 @@
 import React from 'react';
-import './estilos.css';
 import { useSelector } from 'react-redux';
 import ListaPropiedades from '../../components/ListaPropiedades';
-import BarraLateral from '../../components/Barra-Lateral';
+import Filtros from '../../components/Filtros';
 
 
 function PropsAlquiler() {
@@ -12,13 +11,13 @@ function PropsAlquiler() {
     
 
     return (
-        <div className='cont-prop-Venta'>
-            <div className='cont-filtros-venta'>
-                <BarraLateral/>
-            </div>
-
+        <div className='cont-prop-Venta'>         
             <div className='cont-titulo-props-venta'> 
                 <h1>Propiedades en Alquiler</h1>
+                {/* filtros */}
+                <div className='cont-filtros-venta'>
+                    <Filtros mostrarVentaAlq={false}/>
+                </div>
                 <ListaPropiedades allProps={soloEnAlq} />
             </div>            
         </div>

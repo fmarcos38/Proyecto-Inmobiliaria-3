@@ -4,16 +4,22 @@
   align-items: center;
   width: 100%;
   height: auto;
-  background-color: #2d2c2cd0;
+  background-color: #494848d0;
 }
 .cont-home{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
-
+.cont-filtros-home{
+  position: relative;
+  top: -40px;
+  width: 80%;
+}
+.cont-listaP-home{
+  width: 80%;
+}
 .toggle-button {
     width: 250px;
     background-color: #0c0c0c;

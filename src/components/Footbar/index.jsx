@@ -22,11 +22,11 @@ function Footbar() {
                             <p>
                                 Belgrano 2214 - Mar del Plata
                                 <br></br>
-                                Teléfono (0223) 4915977
+                                Teléfono (0223) 0000000
                                 <br></br>
-                                Whatsapp +54 9 (223) 6349596
+                                Whatsapp +54 9 (223) 000000
                                 <br></br>
-                                info@belluccipropiedades.com
+                                info@tumail.com
                                 <br></br>
                             </p>
                         </li>

@@ -6,6 +6,8 @@ import LandingPage from '../../components/LandingPage';
 import Loading from '../../components/Loading';
 import CotizacionDolar from '../../components/CotizacionDolar';
 import { getProps } from '../../Redux/Actions';
+import WhatsAppButton from '../../components/BotonWhastApp';
+import Filtros from '../../components/Filtros';
 
 function Home() {
 
@@ -28,10 +30,18 @@ function Home() {
                         <div className='cont-home'>
                             {/* landing */}
                             <LandingPage />
+                            <div className='cont-filtros-home'>
+                                <Filtros mostrarVentaAlq={true}/>
+                            </div>
                             {/* lista props */}
-                            <ListaPropiedades allProps={allProps} />
+                            <div className='cont-listaP-home'>
+                                <ListaPropiedades allProps={allProps} />
+                            </div>
+                            
                             {/* cotizaciones */}
                             <CotizacionDolar />
+                            {/* boton whatsApp */}
+                            <WhatsAppButton/>
                         </div>
                     )
             }

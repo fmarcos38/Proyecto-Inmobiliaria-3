@@ -48,6 +48,11 @@ function NavbarConRedes() {
                                 Contacto
                             </NavLink>
                         </li>
+                        <li>
+                            <NavLink to='/nosotros' className={'link-navbar'}>
+                                Nosotros
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
                 {/* Redes */}
