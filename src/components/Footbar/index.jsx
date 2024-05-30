@@ -36,11 +36,11 @@ function Footbar() {
                                 <p>Links</p>
                             </h2>
                             <div className='divLinks'>
-                                <Link className='links-items'>Inicio</Link>
-                                <Link className='links-items'>Ventas</Link>
-                                <Link className='links-items'>Alquileres</Link>
-                                <Link className='links-items'>Nosotros</Link>
-                                <Link className='links-items'>Contacto</Link>
+                                <Link to='/' className='links-items'>Inicio</Link>
+                                <Link to='/venta' className='links-items'>Ventas</Link>
+                                <Link to='/alquiler' className='links-items'>Alquileres</Link>
+                                <Link to='/nosotros' className='links-items'>Nosotros</Link>
+                                <Link to='/contacto' className='links-items'>Contacto</Link>
                             </div>
                         </li>
 

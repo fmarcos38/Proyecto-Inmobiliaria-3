@@ -6,17 +6,13 @@
 .contCard {
     position: relative; /* es para Al paea el mouse funcione la opcacidad y msj detalle */
     display: grid;
-    justify-content: center;
-    align-items: center;
     grid-template-columns: 370px;
     grid-template-rows: 50px 250px 90px 80px;
     grid-template-areas: "title" "image" "info1" "info2";
     background: white;
-    /* box-shadow:  2px 5px rgba(0, 0, 0, 0.9); */
     font-family: roboto;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin: 0 20px 20px 0;
 }
 /* espacio titulo */
 .card-title {
@@ -24,9 +20,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--primary-color);
-    background-color: rgb(19, 19, 19);;
-    
+    color: rgb(6, 6, 6);
+    background-color: rgb(187, 193, 193);    
 }
 /* manejo espacio img */
 .card-image {
@@ -103,49 +98,42 @@
     grid-area: info2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgba(187, 193, 193, 0.851);
 }
 .div-info2{
-    width: 100%;
-    background-color: rgba(187, 193, 193, 0.74);
+    width: 100%;    
 }
 .info2 {
     margin: 3px;
 }
 
 /* responsive */
-@media screen and (max-width: 1290px) {
-    .contCard {
-        grid-template-columns: 450px;
-    }
-}
-@media screen and (max-width: 1193px) {
-    .contCard {
-        grid-template-columns: 420px;
-    }
-}
-@media screen and (max-width: 1118px) {
-    .contCard {
-        grid-template-columns: 400px;
-    }
-}
 @media screen and (max-width: 950px) {
     .contCard {
-        grid-template-columns: 350px;
-    }    
+        grid-template-columns: auto;
+    }
 }
-@media screen and (max-width: 843px) {
+@media screen and (max-width: 700px) {
     .contCard {
-        grid-template-columns: 330px;
-    }    
+        grid-template-columns: auto;
+        /* se adapta al ancho del cont Padre, q es ListaProps  */
+        grid-template-rows: 50px 250px 90px 80px;
+    }
+    
 }
 @media screen and (max-width: 480px) {
     .contCard {
-        grid-template-columns: 380px;
+        width: 100%;
+        margin: 0 0 20px 0;
     }
 }
-
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 320px) {
     .contCard {
-        grid-template-columns: 340px;
+        grid-template-columns: auto;
+        /* se adapta al ancho del cont Padre, q es ListaProps  */
+        grid-template-rows: 50px 220px 120px 90px;
+    }
+    .card-img{
+        height: 220px;
     }
 }
