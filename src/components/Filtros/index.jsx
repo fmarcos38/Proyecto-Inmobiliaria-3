@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { filtraOperacionTipo, getProps, muestraDestacadas } from '../../Redux/Actions';
+import FiltraPrecio from '../FIltroRangoPrecio';
 import './estilos.css';
 import iconoProps from '../../Imagenes/logoCasaDepto.jpg';
 
@@ -207,6 +208,11 @@ function Filtros({mostrarVentaAlq}) {
                                 <p className='p-tipo-prop-filtro'><b>Todas</b></p>
                             </div>
                             
+                </div>
+
+                {/* rango precio */}
+                <div className='cont-rangoPrecio-filtro'>
+                    <FiltraPrecio operacion={operacion}/>
                 </div>
             </div>                
         </div>

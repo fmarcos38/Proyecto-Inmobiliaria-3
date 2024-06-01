@@ -10,9 +10,11 @@
     grid-template-rows: 50px 250px 90px 80px;
     grid-template-areas: "title" "image" "info1" "info2";
     background: white;
+    /* box-shadow:  2px 5px rgba(0, 0, 0, 0.9); */
     font-family: roboto;
     text-align: center;
     margin: 0 20px 20px 0;
+    border-radius: 15px;
 }
 /* espacio titulo */
 .card-title {
@@ -21,7 +23,9 @@
     justify-content: center;
     align-items: center;
     color: rgb(6, 6, 6);
-    background-color: rgb(187, 193, 193);    
+    background-color: rgba(187, 193, 193, 0.74);
+    border-radius: 15px 15px 0 0;
+    
 }
 /* manejo espacio img */
 .card-image {
@@ -98,7 +102,8 @@
     grid-area: info2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: rgba(187, 193, 193, 0.851);
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(187, 193, 193, 0.74);
 }
 .div-info2{
     width: 100%;    

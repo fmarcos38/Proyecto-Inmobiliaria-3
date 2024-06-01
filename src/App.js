@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import { InmobiliariaProvider } from './Context';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -13,7 +14,8 @@ import Nosotros from './pages/Nosotros';
 
 function App() {
   return (
-    <div className="App">      
+    <InmobiliariaProvider>
+      <div className="App">      
     {/*--------- navbar------ */}
       <Navbar/>
 
@@ -31,6 +33,7 @@ function App() {
 
       <Footbar/>
     </div>
+    </InmobiliariaProvider>
   );
 }
 

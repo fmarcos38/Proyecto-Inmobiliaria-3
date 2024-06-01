@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { filtraOperacionTipo, getProps, muestraDestacadas } from '../../Redux/Actions';
 import './estilos.css'; // Importar estilos CSS
+import FiltraPrecio from '../FIltroRangoPrecio';
 
 const FiltrosPantallaChica = () => {
 
@@ -168,6 +169,10 @@ const FiltrosPantallaChica = () => {
                 <button className='btn-filtros' id='cochera' onClick={(e) => handleClick(e)}>Cocheras</button>
                 <button className='btn-filtros'  id='destacada' onClick={(e) => handleClick(e)}>Destacadas</button>
                 <button className='btn-filtros' id='todas'  onClick={(e) => handleClick(e)}>Todas</button>
+            </div>
+
+            <div className='cont-filtraPrecio-pCh'>
+                <FiltraPrecio/>
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 .cont-prop-Venta{
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    background-color: rgb(108, 108, 104);
 }
 .cont-filtros-venta{
     width: 100%;
@@ -13,4 +13,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.cont-filtros-venta-pCh{
+    display: none;
+}
+@media screen and (max-width: 700px){
+    .cont-filtros-venta{
+        display: none;
+    }
+    .cont-titulo-props-venta{
+        width: 100%;
+    }
+    .cont-titulo-props-venta h1{
+        text-align: center;
+    }
+    .cont-filtros-venta-pCh{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

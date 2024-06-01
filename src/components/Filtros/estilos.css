@@ -116,6 +116,9 @@
 .cont-flecha{
     display: none;
 }
+.cont-rangoPrecio-filtro{
+    width: 50%;
+}
 /* reponsive */
 @media (max-width: 992px) {
     /* texto sup */
