@@ -65,7 +65,7 @@
 
 
 /* responsive */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 750px){
   .cont-barra {
     width: 90%;
     height: auto;

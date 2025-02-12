@@ -21,6 +21,7 @@
 .cont-listaP-home{
   width: 80%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -38,6 +39,14 @@
   display: none;
 }
 
+@media screen and (max-width: 1000px){
+  .cont-listaP-home{
+    width: 90%;
+    justify-content: center;
+
+  }
+  
+}
 @media screen and (max-width: 700px){
   .cont-home {
     background-color: #0c0c0c;
@@ -47,7 +56,6 @@
   }
   .cont-listaP-home{
     width: 95%;
-    background-color: #b31414;
   }
    /* filtros P.CH */
   .cont-filtrosPCH {

@@ -22,9 +22,9 @@ function LandingPage() {
                 </div>
 
                 {/* flecha animada */}
-                <div className='cont-flecha'>
+                {/* <div className='cont-flecha'>
                     <ArrowDown/>
-                </div>
+                </div> */}
             </div>
         </div>
     )
