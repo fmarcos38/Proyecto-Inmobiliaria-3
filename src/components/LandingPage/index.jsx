@@ -1,5 +1,4 @@
 import React from 'react';
-import ArrowDown from '../Flecha-animada';
 import './styles.css';
 
 function LandingPage() {

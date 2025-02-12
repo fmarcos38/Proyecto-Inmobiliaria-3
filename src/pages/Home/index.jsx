@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import './styles.css';
 import ListaPropiedades from '../../components/ListaPropiedades';
 import LandingPage from '../../components/LandingPage';
 import Loading from '../../components/Loading';
@@ -9,6 +8,7 @@ import { getProps } from '../../Redux/Actions';
 import WhatsAppButton from '../../components/BotonWhastApp';
 import Filtros from '../../components/Filtros';
 import FiltrosPantallaChica from '../../components/Filtros-Pantalla-Chica';
+import './styles.css';
 
 function Home() {
 
